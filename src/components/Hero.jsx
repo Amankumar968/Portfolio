@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { HiArrowDown } from 'react-icons/hi';
 import { SiLeetcode } from 'react-icons/si';
+import profileImg from "../assets/profile.jpg";
+
 
 const Hero = () => {
   const socialLinks = [
@@ -151,27 +153,31 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <img 
-                src="/profile.jpg" 
-                alt="Aman Kumar" 
-                className="profile-image"
-                onError={(e) => {
-                  // Try alternative formats
-                  const img = e.target;
-                  if (img.src.includes('profile.jpg')) {
-                    img.src = '/profile.jpeg';
-                  } else if (img.src.includes('profile.jpg')) {
-                    img.src = '/profile.png';
-                  } else {
-                    // Show placeholder if all formats fail
-                    img.style.display = 'none';
-                    const placeholder = img.nextElementSibling;
-                    if (placeholder) {
-                      placeholder.style.display = 'flex';
-                    }
-                  }
-                }}
-              />
+              <img
+  src={profileImg}
+  alt="Aman Kumar"
+  className="profile-image"
+  onError={(e) => {
+    const img = e.target;
+
+    if (!img.dataset.fallback) {
+      img.dataset.fallback = "jpeg";
+      img.src = "/profile.jpeg";
+    } 
+    else if (img.dataset.fallback === "jpeg") {
+      img.dataset.fallback = "png";
+      img.src = "/profile.png";
+    } 
+    else {
+      img.style.display = "none";
+      const placeholder = img.nextElementSibling;
+      if (placeholder) {
+        placeholder.style.display = "flex";
+      }
+    }
+  }}
+/>
+
               <div className="profile-placeholder" style={{ display: 'none' }}>
                 <span>AK</span>
               </div>
