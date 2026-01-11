@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { HiArrowDown } from 'react-icons/hi';
-import { SiLeetcode } from 'react-icons/si'; 
+import { SiLeetcode } from 'react-icons/si';
 
 const Hero = () => {
   const socialLinks = [
@@ -160,7 +160,7 @@ const Hero = () => {
                   const img = e.target;
                   if (img.src.includes('profile.jpg')) {
                     img.src = '/profile.jpeg';
-                  } else if (img.src.includes('profile.jpeg')) {
+                  } else if (img.src.includes('profile.jpg')) {
                     img.src = '/profile.png';
                   } else {
                     // Show placeholder if all formats fail
