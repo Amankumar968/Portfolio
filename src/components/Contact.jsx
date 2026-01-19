@@ -73,8 +73,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/aman-kumar', label: 'LinkedIn' },
-    { icon: FaGithub, href: 'https://github.com/amankumarcode', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/aman-kumar-b06b74248/', label: 'LinkedIn' },
+    { icon: FaGithub, href: 'https://github.com/Amankumar968', label: 'GitHub' },
   ];
 
   const containerVariants = {
