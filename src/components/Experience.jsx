@@ -36,17 +36,16 @@ const Experience = () => {
       period: 'Aug 2024 - Present',
       description: [
         'Currently in Sem III',
-        'CGPA: 8.88',
+        'CGPA: 8.78',
       ],
     },
     {
     type: 'education',
-    title: 'Master of Computer Applications (MCA)',
-    company: 'Dr. D.Y. Patil School of Science and Technology, Pune',
-    period: 'Jul 2024 - May 2026',
+    title: 'Bachelor of Computer Applications (BCA)',
+    company: 'Lalit Narayan Mithila University, Darbhanga',
+    period: 'Dec 2020 - Dec 2023',
     description: [
-      'Completed',
-      'CGPA: 8.78',
+      'CGPA: 8.07',
     ],
   },
   ];
