@@ -40,14 +40,15 @@ const Experience = () => {
       ],
     },
     {
-      type: 'education',
-      title: 'Bachelor of Computer Applications (BCA)',
-      company: 'Lalit Narayan Mithila University, Darbhanga',
-      period: 'Dec 2020 - Dec 2023',
-      description: [
-        'CGPA: 8.00',
-      ],
-    },
+    type: 'education',
+    title: 'Master of Computer Applications (MCA)',
+    company: 'Dr. D.Y. Patil School of Science and Technology, Pune',
+    period: 'Jul 2024 - May 2026',
+    description: [
+      'Completed',
+      'CGPA: 8.78',
+    ],
+  },
   ];
 
   const containerVariants = {
