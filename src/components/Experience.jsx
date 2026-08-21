@@ -8,38 +8,38 @@ const Experience = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const experiences = [
-    {
-      type: 'work',
-      title: 'Full Stack Developer Intern',
-      company: 'Nobrokerage.com, Pune',
-      period: 'July 2025 - Oct 2025',
-      description: [
-        'Developed responsive UI components using React.js, Next.js, and Tailwind CSS for brokerage-free real estate platform',
-        'Built RESTful APIs with Node.js and Express.js, implementing authentication, property listings, and search functionality',
-        'Enhanced website performance and user experience through bug fixes and feature implementations',
-      ],
-    },
-    {
-      type: 'work',
-      title: 'Web Development & Designing Intern',
-      company: 'AICTE OIB-SIP',
-      period: 'Dec 2023 - Jan 2024',
-      description: [
-        'Collaborated with teams to build responsive user interfaces and contributed to frontend development tasks',
-        'Assisted in UI/UX design implementation using HTML5, CSS3, and JavaScript',
-      ],
-    },
-    {
-      type: 'education',
-      title: 'Master of Computer Applications (MCA)',
-      company: 'Dr. D.Y. Patil School of Science and Technology, Pune',
-      period: 'Aug 2024 - Present',
-      description: [
-        'Currently in Sem III',
-        'CGPA: 8.78',
-      ],
-    },
-    {
+  {
+    type: 'work',
+    title: 'Full Stack Developer Intern',
+    company: 'Nobrokerage.com, Pune',
+    period: 'July 2025 - Oct 2025',
+    description: [
+      'Developed responsive UI components using React.js, Next.js, and Tailwind CSS for brokerage-free real estate platform',
+      'Built RESTful APIs with Node.js and Express.js, implementing authentication, property listings, and search functionality',
+      'Enhanced website performance and user experience through bug fixes and feature implementations',
+    ],
+  },
+  {
+    type: 'work',
+    title: 'Web Development & Designing Intern',
+    company: 'AICTE OIB-SIP',
+    period: 'Dec 2023 - Jan 2024',
+    description: [
+      'Collaborated with teams to build responsive user interfaces and contributed to frontend development tasks',
+      'Assisted in UI/UX design implementation using HTML5, CSS3, and JavaScript',
+    ],
+  },
+  {
+    type: 'education',
+    title: 'Master of Computer Applications (MCA)',
+    company: 'Dr. D.Y. Patil School of Science and Technology, Pune',
+    period: 'Jul 2024 - May 2026',
+    description: [
+      'Completed',
+      'CGPA: 8.78',
+    ],
+  },
+  {
     type: 'education',
     title: 'Bachelor of Computer Applications (BCA)',
     company: 'Lalit Narayan Mithila University, Darbhanga',
@@ -48,7 +48,7 @@ const Experience = () => {
       'CGPA: 8.07',
     ],
   },
-  ];
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
